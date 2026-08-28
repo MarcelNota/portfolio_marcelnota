@@ -4,8 +4,6 @@ WORKDIR /app
 
 COPY . .
 
-RUN chmod +x mvnw
-
 RUN sh mvnw clean package -DskipTests
 
 EXPOSE 8080
