@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+    <body> <div th:fragment="projects">
+            <!-- Projects Section-->
+            <section class="py-5">
+                <div class="container px-5 mb-5">
+                    <div class="text-center mb-5">
+                        <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
+                    </div>
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-11 col-xl-9 col-xxl-8">
+                            <!-- Project Card 1-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">Ecomerce API Flask</h2>
+                                            <p>REST API developed with Flask for an e-commerce application, featuring API endpoints and database integration.
+                                            </p>
+                                        </div>
+                                        <img class="img-fluid" th:src="@{/assets/images/projects/ecomerceflask.jpeg}" alt="E-commerce Site Flask" />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Project Card 2-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">Weather Forecast App</h2>
+                                            <p>Java application for weather information, integrated with an external API to retrieve real-time weather forecast data.
+                                            </p>
+                                        </div>
+                                        <img class="img-fluid" th:src="@{/assets/images/projects/weatherforecast.jpeg}" alt="Weather Forecast App" />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Project Card 3-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">Database Design & ImplementationMySQL Data Analysis</h2>
+                                            <p>Relational database design and implementation project, including table structures, relationships, and SQL operations.
+                                            </p>
+                                        </div>
+                                        <img class="img-fluid" th:src="@{/assets/images/projects/databasedesign.jpeg}" alt="Database Design and Implementation" />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Project Card 4-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                <div class="card-body p-0">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">Database Design & Implementation</h2>
+                                            <p>Data analysis project using MySQL, applying SQL queries, aggregations, JOINs, and other techniques to extract meaningful insights from a database.
+                                            </p>
+                                        </div>
+                                        <img class="img-fluid" th:src="@{/assets/images/projects/databaseanalisys.jpeg}" alt="MySQL Data Analysis" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Call to action section-->
+            <section class="py-5 bg-gradient-primary-to-secondary text-white">
+                <div class="container px-5 my-5">
+                    <div class="text-center">
+                        <h2 class="display-4 fw-bolder mb-4">Let's build something together</h2>
+                        <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" th:href="@{contact}">Contact me</a>
+                    </div>
+                </div>
+            </section>
+    </body>
+</html>
